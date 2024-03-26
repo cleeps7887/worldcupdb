@@ -1,0 +1,237 @@
+builtin unset VSCODE_INJECTION
+[ -z "$VSCODE_SHELL_INTEGRATION" ]
+[ -n "${VSCODE_ENV_REPLACE:-}" ]
+[ -n "${VSCODE_ENV_PREPEND:-}" ]
+[ -n "${VSCODE_ENV_APPEND:-}" ]
+[[ "$(uname -s)" =~ ^CYGWIN*|MINGW*|MSYS* ]]
+[[ "$HISTCONTROL" =~ .. ]]
+__vsc_history_verify=1
+__vsc_initialized=0
+__vsc_original_PS1="$PS1"
+__vsc_original_PS2="$PS2"
+__vsc_custom_PS1=""
+__vsc_custom_PS2=""
+__vsc_in_command_execution="1"
+__vsc_current_command=""
+__vsc_nonce="$VSCODE_NONCE"
+unset VSCODE_NONCE
+[[ -n "${bash_preexec_imported:-}" ]]
+__vsc_dbg_trap="$(__vsc_get_trap DEBUG)"
+[[ -z "$__vsc_dbg_trap" ]]
+[[ "$__vsc_dbg_trap" != '__vsc_preexec "$_"' && "$__vsc_dbg_trap" != '__vsc_preexec_all "$_"' ]]
+trap '__vsc_preexec_all "$_"' DEBUG
+__vsc_original_prompt_command=${PROMPT_COMMAND:-}
+builtin unset VSCODE_INJECTION
+[ -z "$VSCODE_SHELL_INTEGRATION" ]
+[ -n "${VSCODE_ENV_REPLACE:-}" ]
+[ -n "${VSCODE_ENV_PREPEND:-}" ]
+[ -n "${VSCODE_ENV_APPEND:-}" ]
+[[ "$(uname -s)" =~ ^CYGWIN*|MINGW*|MSYS* ]]
+[[ "$HISTCONTROL" =~ .. ]]
+__vsc_history_verify=1
+__vsc_initialized=0
+__vsc_original_PS1="$PS1"
+__vsc_original_PS2="$PS2"
+__vsc_custom_PS1=""
+__vsc_custom_PS2=""
+__vsc_in_command_execution="1"
+__vsc_current_command=""
+__vsc_nonce="$VSCODE_NONCE"
+unset VSCODE_NONCE
+[[ -n "${bash_preexec_imported:-}" ]]
+__vsc_dbg_trap="$(__vsc_get_trap DEBUG)"
+[[ -z "$__vsc_dbg_trap" ]]
+[[ "$__vsc_dbg_trap" != '__vsc_preexec "$_"' && "$__vsc_dbg_trap" != '__vsc_preexec_all "$_"' ]]
+trap '__vsc_preexec_all "$_"' DEBUG
+__vsc_original_prompt_command=${PROMPT_COMMAND:-}
+psql --username=freecodecamp --dbname=postgres
+__vsc_prompt_cmd_original
+ls --color=auto -l
+chmod +x queries.sh
+chmod +x insert_data.sh
+__vsc_prompt_cmd_original
+__vsc_prompt_cmd_original
+./insert_data.sh
+./insert_data.sh test
+./insert_data.sh test
+./insert_data.sh test
+./insert_data.sh test
+./insert_data.sh test
+./insert_data.sh test
+\l
+psql --username=postgres --dbname=postgres
+./insert_data.sh test
+./insert_data.sh test
+./insert_data.sh test
+[ -d "$HOME/bin" ]
+[ -d "$HOME/.local/bin" ]
+PATH="$HOME/.local/bin:$PATH"
+[ -e /home/gitpod/.nix-profile/etc/profile.d/nix.sh ]
+. /home/gitpod/.nix-profile/etc/profile.d/nix.sh
+[[ -s "$HOME/.rvm/scripts/rvm" ]]
+source "$HOME/.rvm/scripts/rvm"
+[[ -n $SSH_CONNECTION ]]
+'/ide/node' -p '"0ad0efe1e531" + JSON.stringify(process.env) + "0ad0efe1e531"'
+builtin unset VSCODE_INJECTION
+[ -z "$VSCODE_SHELL_INTEGRATION" ]
+[ -n "${VSCODE_ENV_REPLACE:-}" ]
+[ -n "${VSCODE_ENV_PREPEND:-}" ]
+[ -n "${VSCODE_ENV_APPEND:-}" ]
+[[ "$(uname -s)" =~ ^CYGWIN*|MINGW*|MSYS* ]]
+[[ "$HISTCONTROL" =~ .. ]]
+__vsc_history_verify=1
+__vsc_initialized=0
+__vsc_original_PS1="$PS1"
+__vsc_original_PS2="$PS2"
+__vsc_custom_PS1=""
+__vsc_custom_PS2=""
+__vsc_in_command_execution="1"
+__vsc_current_command=""
+__vsc_nonce="$VSCODE_NONCE"
+unset VSCODE_NONCE
+[[ -n "${bash_preexec_imported:-}" ]]
+__vsc_dbg_trap="$(__vsc_get_trap DEBUG)"
+[[ -z "$__vsc_dbg_trap" ]]
+[[ "$__vsc_dbg_trap" != '__vsc_preexec "$_"' && "$__vsc_dbg_trap" != '__vsc_preexec_all "$_"' ]]
+trap '__vsc_preexec_all "$_"' DEBUG
+__vsc_original_prompt_command=${PROMPT_COMMAND:-}
+builtin unset VSCODE_INJECTION
+[ -z "$VSCODE_SHELL_INTEGRATION" ]
+[ -n "${VSCODE_ENV_REPLACE:-}" ]
+[ -n "${VSCODE_ENV_PREPEND:-}" ]
+[ -n "${VSCODE_ENV_APPEND:-}" ]
+[[ "$(uname -s)" =~ ^CYGWIN*|MINGW*|MSYS* ]]
+[[ "$HISTCONTROL" =~ .. ]]
+__vsc_history_verify=1
+__vsc_initialized=0
+__vsc_original_PS1="$PS1"
+__vsc_original_PS2="$PS2"
+__vsc_custom_PS1=""
+__vsc_custom_PS2=""
+__vsc_in_command_execution="1"
+__vsc_current_command=""
+__vsc_nonce="$VSCODE_NONCE"
+unset VSCODE_NONCE
+[[ -n "${bash_preexec_imported:-}" ]]
+__vsc_dbg_trap="$(__vsc_get_trap DEBUG)"
+[[ -z "$__vsc_dbg_trap" ]]
+[[ "$__vsc_dbg_trap" != '__vsc_preexec "$_"' && "$__vsc_dbg_trap" != '__vsc_preexec_all "$_"' ]]
+trap '__vsc_preexec_all "$_"' DEBUG
+__vsc_original_prompt_command=${PROMPT_COMMAND:-}
+psql --username=postgres --dbname=postgres
+\c worldcuptest
+psql --username=postgres --dbname=postgres
+psql --username=freecodecamp --dbname=postgres
+__vsc_prompt_cmd_original
+__vsc_prompt_cmd_original
+psql --username=postgres --dbname=postgres
+psql --username=freecodecamp --dbname=postgres
+ls --color=auto -l
+./insert_data.sh
+psql --username=postgres --dbname=postgres
+./insert_data.sh
+./insert_data.sh test
+./insert_data.sh test
+psql --username=postgres --dbname=postgres
+psql --username=freecodecamp --dbname=postgres
+./insert_data.sh
+./insert_data.sh
+./insert_data.sh
+__vsc_prompt_cmd_original
+__vsc_prompt_cmd_original
+pg_dump -cC --inserts -U freecodecamp worldcup > worldcup.sql
+__vsc_prompt_cmd_original
+ls --color=auto -l
+git status
+__vsc_prompt_cmd_original
+git add worldcup.sql
+git add queries.sh
+git add insert_data.sh
+git add games.csv
+git add expected_output.txt
+git commit -m "first commit"
+git status
+__vsc_prompt_cmd_original
+__vsc_prompt_cmd_original
+git remote set-url https://github.com/cleeps7887/worldcupdb.git
+git remote set-url origin https://github.com/cleeps7887/worldcupdb.git
+__vsc_prompt_cmd_original
+git push -u origin main
+__vsc_prompt_cmd_original
+__vsc_prompt_cmd_original
+git status
+./insert_data.sh
+./queries.sh
+./queries.sh
+./queries.sh
+__vsc_prompt_cmd_original
+./queries.sh
+./queries.sh
+./queries.sh
+./queries.sh
+./queries.sh
+./queries.sh
+./queries.sh
+./queries.sh
+./queries.sh
+./queries.sh
+./queries.sh
+__vsc_prompt_cmd_original
+./queries.sh
+./queries.sh
+__vsc_prompt_cmd_original
+./queries.sh
+__vsc_prompt_cmd_original
+__vsc_prompt_cmd_original
+./queries.sh
+./queries.sh
+./queries.sh
+./queries.sh
+./queries.sh
+__vsc_prompt_cmd_original
+__vsc_prompt_cmd_original
+./queries.sh
+./queries.sh
+./queries.sh
+./queries.sh
+./queries.sh
+__vsc_prompt_cmd_original
+__vsc_prompt_cmd_original
+./queries.sh
+./queries.sh
+__vsc_prompt_cmd_original
+./queries.sh
+__vsc_prompt_cmd_original
+pg_dump -cC --inserts -U freecodecamp worldcup > worldcup.sql
+git commit -m "added more stuff to queries script"
+__vsc_prompt_cmd_original
+git add worldcup.sql
+gid add queries.sh
+git add insert_data.sh
+git commit -m "added more queries to script"
+git push -u origin main
+__vsc_prompt_cmd_original
+__vsc_prompt_cmd_original
+__vsc_prompt_cmd_original
+git push -u origin main
+git status
+git add queries.sh
+git status
+git push -u origin main
+git commit -m "queries"
+git push -u origin main
+__vsc_prompt_cmd_original
+git push -u origin main
+./queries.sh
+./queries.sh
+./queries.sh
+__vsc_prompt_cmd_original
+__vsc_prompt_cmd_original
+git status
+__vsc_prompt_cmd_original
+__vsc_prompt_cmd_original
+git add queries.sh
+git commit -m "finished queries push"
+git push -u origin main
+__vsc_prompt_cmd_original
+__vsc_prompt_cmd_original
